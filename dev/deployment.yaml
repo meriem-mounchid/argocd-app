@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: myapp-deployment
 spec:
   selector:
     matchLabels:
-      app: myapp
-  replicas: 2
+      app: myapp1
+  replicas: 1
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp2
     spec:
       containers:
-      - name: myapp
+      - name: myapp3
         image: wil42/playground:v1
         ports:
         - containerPort: 8080
