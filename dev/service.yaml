@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     app: myapp
   ports:
